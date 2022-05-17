@@ -1,7 +1,7 @@
 /*Edicion del index*/
 .mainIndex{
+    @include general (800px,auto,30px);
     background-color: $color-fondo;
-    height: 800px;
     color: $color-texto;
     text-align: center;
     display: flex;
@@ -11,7 +11,6 @@
     grid-area: main;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
     font-style: italic;
     .gridIndex{
         margin-top: 6%;

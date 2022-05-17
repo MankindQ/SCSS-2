@@ -2,6 +2,15 @@
 $color_principal:rgb(27,27,27);
 $color-fondo:rgb(78, 78, 78);
 $color-texto:blanchedalmond;
+@mixin general ($largo,$ancho,$fuente){
+    height: $largo;
+    width: $ancho;
+    font-size: $fuente;
+}
+@mixin general2 ($largo,$ancho){
+    height: $largo;
+    width: $ancho;
+}
 body{
     background-color: $color_principal;
 }
@@ -14,7 +23,11 @@ body{
     ;
 }
 @import "nav-footer";
-@import "mainIndex";
+@import "Index";
+@import "Nosotros";
+@import "Contacto";
+@import "CasaMatriz";
+@import "Resenas";
 @import "media-kf.scss";
 
 
