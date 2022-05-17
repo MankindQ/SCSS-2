@@ -1,0 +1,86 @@
+body {
+  background-color: #1b1b1b; }
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
+nav {
+  background-color: #1b1b1b;
+  grid-area: header;
+  animation-name: cascade;
+  animation-duration: 0.8s;
+  animation-timing-function: ease; }
+  nav .imagenNav {
+    width: 50px;
+    height: 50px; }
+  nav ul {
+    list-style-type: none; }
+
+footer {
+  background-color: #1b1b1b; }
+
+/*Edicion del index*/
+.mainIndex {
+  background-color: #4e4e4e;
+  height: 800px;
+  color: blanchedalmond;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  grid-area: main;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-style: italic; }
+  .mainIndex .gridIndex {
+    margin-top: 6%;
+    display: grid;
+    grid-template-areas: "I1 I2 I3"; }
+    .mainIndex .gridIndex .I1 {
+      grid-area: I1; }
+    .mainIndex .gridIndex .I2 {
+      grid-area: I2; }
+    .mainIndex .gridIndex .I3 {
+      grid-area: I3; }
+    .mainIndex .gridIndex .IMG1, .mainIndex .gridIndex .IMG2, .mainIndex .gridIndex .IMG3 {
+      margin-top: 3%; }
+    .mainIndex .gridIndex .zoomIndex:hover {
+      transform: scale(1.2); }
+
+@keyframes cascade {
+  0% {
+    transform: translateY(-200px); }
+  100% {
+    transform: translateY(0px); } }
+
+@media screen and (max-width: 425px) {
+  .mainMedia {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: small; }
+  nav {
+    font-size: x-small !important; }
+  .mainIndex {
+    font-size: medium !important; } }
+
+@media screen and (max-width: 468px) {
+  .mainMedia {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: medium; }
+  nav {
+    font-size: small; } }
+
+@media screen and (max-width: 768px) {
+  .mainMedia {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 25px; } }

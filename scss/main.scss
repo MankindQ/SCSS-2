@@ -1,0 +1,21 @@
+
+$color_principal:rgb(27,27,27);
+$color-fondo:rgb(78, 78, 78);
+$color-texto:blanchedalmond;
+body{
+    background-color: $color_principal;
+}
+.wrapper{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+@import "nav-footer";
+@import "mainIndex";
+@import "media-kf.scss";
+
+
+
